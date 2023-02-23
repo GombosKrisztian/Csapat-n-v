@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer Configuration Tool</title>
+  </head>
+  <body>
+    <h2>Select your computer components:</h2>
+    <p>
+      CPU:
+      <select id="cpu">
+        <option value="i3">Intel Core i3</option>
+        <option value="i5">Intel Core i5</option>
+        <option value="i7">Intel Core i7</option>
+      </select>
+    </p>
+    <p>
+      Graphics:
+      <select id="graphics">
+        <option value="integrated">Integrated</option>
+        <option value="dedicated">Dedicated</option>
+      </select>
+    </p>
+    <p>
+      Memory:
+      <select id="memory">
+        <option value="4GB">4 GB</option>
+        <option value="8GB">8 GB</option>
+        <option value="16GB">16 GB</option>
+      </select>
+    </p>
+    <p>
+      Storage:
+      <select id="storage">
+        <option value="250GB">250 GB</option>
+        <option value="500GB">500 GB</option>
+        <option value="1TB">1 TB</option>
+      </select>
+    </p>
+    <button onclick="calculatePrice()">Calculate Price</button>
+    <p id="price"></p>
+    <script>
+      function calculatePrice() {
+        var cpu = document.getElementById("cpu").value;
+        var graphics = document.getElementById("graphics").value;
+        var memory = document.getElementById("memory").value;
+        var storage = document.getElementById("storage").value;
+        var totalPrice = 0;
+  
+        if (cpu == "i3") {
+          totalPrice += 300;
+        } else if (cpu == "i5") {
+          totalPrice += 500;
+        } else if (cpu == "i7") {
+          totalPrice += 700;
+        }
+  
+        if (graphics == "integrated") {
+          totalPrice += 200;
+        } else if (graphics == "dedicated") {
+          totalPrice += 400;
+        }
+  
+        if (memory == "4GB") {
+          totalPrice += 100;
+        } else if (memory == "8GB") {
+          totalPrice += 200;
+        } else if (memory == "16GB") {
+          totalPrice += 400;
+        }
+  
+        if (storage == "250GB") {
+          totalPrice += 200;
+        } else if (storage == "500GB") {
+          totalPrice += 300;
+        } else if (storage == "1TB") {
+          totalPrice += 400;
+        }
+  
+        document.getElementById("price").innerHTML = "Total Price: $" + totalPrice;
+      }
+    </script>
+  </body>
+</html>
