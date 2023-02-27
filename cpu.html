@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cpu</title>
 </head>
+
 <body>
-    
+    <p>A <b>CPU</b> (angol: Central Processing Unit – központi feldolgozóegység) más néven processzor ill.
+        mikroprocesszor, a számítógép „agya”, azon egysége, amely az utasítások értelmezését és végrehajtását vezérli,
+        félvezetős kivitelezésű, összetett elektronikus áramkör. Magyarra többféleképpen fordítják, így pl. a központi
+        végrehajtó egység, központi feldolgozó egység, központi feldolgozó processzor, vagy egyszerűen processzor
+        kifejezések is elterjedtek. Míg a processzor fogalma már korábban ismert volt, a mikroprocesszor megjelenését
+        csak a félvezetős technológia és az integrált áramkörök kifejlesztése tette lehetővé, az 1970-es évek elején. A
+        processzor alatt általában mikroprocesszort értünk, régebben a processzor sok különálló áramkör volt, ám a
+        mikroprocesszorral sikerült a legfontosabb komponenseket egyetlen szilíciumlapkára integrálni.</p>
+
+    <p>A mikroprocesszor egy vagy több szilícium kristályra integrált, néhány ezertől[1] több milliárd számú
+        tranzisztort tartalmazó integrált áramkör, amelyben további részegységek különíthetők el, rendelkezik az adatok
+        ki- és beviteléhez szükséges sínrendszerrel, és rendelkezik egy utasításkészlettel, amelynek utasításait képes
+        végrehajtani. A bemeneti eszközök segítségével kódolt információkat feldolgozza, majd az eredményt a kimeneti
+        eszközök felé továbbítja, melyek ezeket az adatokat információvá alakítják vissza. A világ első
+        mikroprocesszorát (TMS 1000) az amerikai Texas Instruments fejlesztette ki 1971-ben, ezt követte az Intel
+        4004-es processzora, majd további cégek gyártmányai.</p>
+
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1>A processzor főbb részei</h1>
+
+            <p>
+                Intel Pentium 100 MHz-es processzor
+                <p>
+                    <b>ALU:</b> (Arithmetic and Logical Unit – Aritmetikai és Logikai Egység). A processzor alapvető alkotórésze,
+                    ami alapvető matematikai és logikai műveleteket hajt végre. Sebessége növelhető egy koprocesszor (FPU,
+                    Floating Point Unit, lebegőpontos műveleteket végző egység) beépítésével. Az FPU korábban külön
+                    részegység volt, manapság a processzorok mindegyike beépítve tartalmazza.
+                    AGU: (Address Generation Unit) - a címszámító egység, feladata a programutasításokban található címek
+                    leképezése a főtár fizikai címeire és a tárolóvédelmi hibák felismerése.
+                </p>
+                <p>
+                    <b>CU: </b>(Control Unit a.m. vezérlőegység vagy vezérlőáramkör). Ez szervezi, ütemezi a processzor egész
+                    munkáját. Például lehívja a memóriából a soron következő utasítást, értelmezi és végrehajtatja azt, majd
+                    meghatározza a következő utasítás címét.
+                </p>
+                <p>
+                    <b>Regiszter (Register)</b>: A regiszter a processzorba beépített nagyon gyors elérésű, kis méretű memória. A
+                    regiszterek addig (ideiglenesen) tárolják az információkat, utasításokat, amíg a processzor dolgozik
+                    velük. A mai gépekben 32/64 bit méretű regiszterek vannak. A processzor adatbuszai mindig akkorák,
+                    amekkora a regiszterének a mérete, így egyszerre tudja az adatot betölteni ide. Például egy 32 bites
+                    regisztert egy 32 bites busz kapcsol össze a RAM-mal. A regiszterek között nem csak adattároló elemek
+                    vannak (bár végső soron mindegyik az), hanem a processzor működéséhez elengedhetetlenül szükséges
+                    számlálók, és jelzők is. Ilyen például :
+                    utasításszámláló, (PC=program counter, IP=instruction pointer) ami mindig a következő végrehajtandó
+                    utasítás címét,
+                    utasításregiszter (IR=instruction register), mely a memóriából kiolvasott utasítást tárolja. E kód
+                    alapján határozza meg a vezérlőegység az elvégzendő műveletet
+                    flagregiszter, amely a processzor működése közben létrejött állapotok jelzőit (igaz, vagy hamis),
+                    veremmutató (SP = Stack Pointer) ,
+                    és az akkumulátor, (AC) amely pedig a logikai és aritmetikai műveletek egyik operandusát, majd az
+                    utasítás végrehajtása után az eredményt tartalmazza.
+                    Buszvezérlő: A regisztert és más adattárolókat összekötő buszrendszert irányítja. A busz továbbítja az
+                    adatokat.
+                </p>
+                <p>
+                    <b>Cache:</b>dern processzorok fontos része a cache (gyorsítótár). A cache a processzorba, vagy a
+                    processzor környezetébe integrált memória, ami a viszonylag lassú rendszermemória-elérést hivatott
+                    kiváltani azoknak a programrészeknek és adatoknak előzetes beolvasásával, amikre a végrehajtásnak
+                    közvetlenül szüksége lehet. A mai PC processzorok általában két gyorsítótárat használnak, egy kisebb (és
+                    gyorsabb) első szintű (L1) és egy nagyobb másodszintű (L2) cache-t. A gyorsítótár mérete ma már
+                    megabyte-os nagyságrendű.
+                </p>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img  src="cpu_patya.png" alt="Cpu">
+        </div>
+
+    </div>
 </body>
+
 </html>
