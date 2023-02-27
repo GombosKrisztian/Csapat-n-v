@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Számítógép összerakó eszköz</title>
   </head>
   <body>
@@ -19,6 +23,32 @@
       </select>
     </p>
     <table>
+      <tr>
+        <td>
+          <p>Intel Core i3</p>
+        </td>
+        <td>
+          <p>Intel Core i5</p>
+        </td>
+        <td>
+          <p>Intel Core i7</p>
+        </td>
+        <td>
+          <p>Intel Core i9</p>
+        </td>
+        <td>
+          <p>Ryzen 3</p>
+        </td>
+        <td>
+          <p>Ryzen 5</p>
+        </td>
+        <td>
+          <p>Ryzen 7</p>
+        </td>
+        <td>
+          <p>Ryzen 9</p>
+        </td>
+      </tr>
       <tr>
         <td>
           <img src="i3.jfif" alt="i3">
@@ -67,6 +97,26 @@
     <table>
       <tr>
         <td>
+          <p>Rtx 3090</p>
+        </td>
+        <td>
+          <p>Rtx 3080</p>
+        </td>
+        <td>
+          <p>Rtx 3070</p>
+        </td>
+        <td>
+          <p>Rtx 3060</p>
+        </td>
+        <td>
+          <p>Gtx 1660 ti</p>
+        </td>
+        <td>
+          <p>Gtx 1660</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <img src="3090.jfif" alt="">
         </td>
         <td>
@@ -84,6 +134,33 @@
         <td>
           <img src="1660e.jfif" alt="">
         </td>
+      </tr>
+      <tr>
+        
+        <td>
+          <p>Gtx 1650</p>
+        </td>
+        <td>
+          <p>Rx6900 XT</p>
+        </td>
+        <td>
+          <p>Rx6800 XT</p>
+        </td>
+        <td>
+          <p>Rx6700 XT</p>
+        </td>
+        <td>
+          <p>Rx5700 XT</p>
+        </td>
+        <td>
+          <p>Rx5600 XT</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="1650.jfif" alt="">
+        </td>
+     
         <td>
           <img src="69.jfif" alt="">
         </td>
@@ -147,9 +224,14 @@
         </td>
       </tr>
     </table>
-    <button onclick="calculatePrice()">Calculate Price</button>
+    <button onclick="calculatePrice()">Ár kiszámítása</button>
+    <button onclick="hiba()">Vásárlás</button>
     <p id="price"></p>
     <script>
+      function hiba(){
+        alert ("Hiba történt")
+        location.reload();
+      }
       function calculatePrice() {
         var cpu = document.getElementById("cpu").value;
         var graphics = document.getElementById("graphics").value;
