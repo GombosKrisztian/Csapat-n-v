@@ -1,12 +1,789 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Számítógép összerakó eszköz</title>
+  </head>
+  <body>
+    <h2>Számítógép alkatrészek kiválasztása:</h2>
+    <p>
+      CPU:
+      <select id="cpu">
+        <option value="i3">Intel Core i3</option>
+        <option value="i5">Intel Core i5</option>
+        <option value="i7">Intel Core i7</option>
+        <option value="i9">Intel Core i9</option>
+        <option value="r3">Ryzen 3</option>
+        <option value="r5">Ryzen 5</option>
+        <option value="r7">Ryzen 7</option>
+        <option value="r9">Ryzen 9</option>
+      </select>
+    </p>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div><div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <p>Intel Core i3</p>
+        </td>
+        <td>
+          <p>Intel Core i5</p>
+        </td>
+        <td>
+          <p>Intel Core i7</p>
+        </td>
+        <td>
+          <p>Intel Core i9</p>
+        </td>
+        <td>
+          <p>Ryzen 3</p>
+        </td>
+        <td>
+          <p>Ryzen 5</p>
+        </td>
+        <td>
+          <p>Ryzen 7</p>
+        </td>
+        <td>
+          <p>Ryzen 9</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="i3.jfif" alt="i3">
+        </td>
+        <td>
+          <img src="i5.jfif" alt="i5">
+        </td>
+        <td>
+          <img src="i7.jfif" alt="i7">
+        </td>
+        <td>
+          <img src="i9.jfif" alt="i9">
+        </td>
+        <td>
+          <img src="r3.jfif" alt="r3">
+        </td>
+        <td>
+          <img src="r5.jfif" alt="r5">
+        </td>
+        <td>
+          <img src="r7.jfif" alt="r7">
+        </td>
+        <td>
+          <img src="r9.jfif" alt="r9">
+        </td>
+      </tr>
+    </table>
+    <p>
+      Videókártya:
+      <select id="graphics">
+        <option value="integrated">Integrált</option>
+        <option value="3090">Rtx 3090</option>
+        <option value="3080">Rtx 3080</option>
+        <option value="3070">Rtx 3070</option>
+        <option value="3060">Rtx 3060</option>
+        <option value="1660ti">Gtx 1660 ti</option>
+        <option value="1660">Gtx 1660</option>
+        <option value="1650">Gtx 1650</option>
+        <option value="69">Rx6900 XT</option>
+        <option value="68">Rx6800 XT</option>
+        <option value="67">Rx6700 XT</option>
+        <option value="57">Rx5700 XT</option>
+        <option value="56">Rx5600 XT</option>
+        </select
+    </p>
+    <div class="row">
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rtx 3090</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="3090.jfif" alt="Rtx 3090" title="Rtx 3090" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rtx 3080</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="3080.jfif" alt="Rtx 3080" title="Rtx 3080" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rtx 3070</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="30670.jfif" alt="Rtx 3070" title="Rtx 3070" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rtx 3060</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="3060.jfif" alt="Rtx 3060" title="Rtx 3060" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Gtx 1660 ti</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="1660.jfif" alt="Gtx 1660 ti" title="Gtx 1660 ti" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Gtx 1660</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="1660e.jfif" alt="Gtx 1660" title="Gtx 1660" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Gtx 1650</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="1650.jfif" alt="Gtx 1650" title="Gtx 1650" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rx 6900 XT</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="69.jfif" alt="Rx 6900 XT" title="Rx 6900 XT" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rx 6800 XT</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="68.jfif" alt="Rx 6800 XT" title="Rx 6800 XT" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rx 6700 XT</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="67.jfif" alt="Rx 6700 XT" title="Rx 6700 XT" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rx 5700 XT</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="57.jfif" alt="Rx 5700 XT" title="Rx 5700 XT" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg">Rx 5600 XT</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="56.jfif" alt="Rx 5600 XT" title="Rx 5600 XT" style="border-radius: 20px;"></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p class="szoveg"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-3" style="padding: 25px;">
+        <table>
+        <tr>
+            <td>
+              <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><img src="" alt="" title=""></p>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <p>Rtx 3090</p>
+        </td>
+        <td>
+          <p>Rtx 3080</p>
+        </td>
+        <td>
+          <p>Rtx 3070</p>
+        </td>
+        <td>
+          <p>Rtx 3060</p>
+        </td>
+        <td>
+          <p>Gtx 1660 ti</p>
+        </td>
+        <td>
+          <p>Gtx 1660</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="3090.jfif" alt="">
+        </td>
+        <td>
+          <img src="3080.jfif" alt="">
+        </td>
+        <td>
+          <img src="30670.jfif" alt="">
+        </td>
+        <td>
+          <img src="3060.jfif" alt="">
+        </td>
+        <td>
+          <img src="1660.jfif" alt="">
+        </td>
+        <td>
+          <img src="1660e.jfif" alt="">
+        </td>
+      </tr>
+      <tr>
+        
+        <td>
+          <p>Gtx 1650</p>
+        </td>
+        <td>
+          <p>Rx6900 XT</p>
+        </td>
+        <td>
+          <p>Rx6800 XT</p>
+        </td>
+        <td>
+          <p>Rx6700 XT</p>
+        </td>
+        <td>
+          <p>Rx5700 XT</p>
+        </td>
+        <td>
+          <p>Rx5600 XT</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="1650.jfif" alt="">
+        </td>
+     
+        <td>
+          <img src="69.jfif" alt="">
+        </td>
+        <td>
+          <img src="68.jfif" alt="">
+        </td>
+        <td>
+          <img src="67.jfif" alt="">
+        </td>
+        <td>
+          <img src="57.jfif" alt="">
+        </td>
+        <td>
+          <img src="56.jfif" alt="">
+        </td>
+      </tr>
+    </table>
+    <p>
+      Memória:
+      <select id="memory">
+        <option value="4GB">4 GB</option>
+        <option value="8GB">8 GB</option>
+        <option value="16GB">16 GB</option>
+        <option value="32GB">32 GB</option>
+      </select>
+    </p>
+    <table>
+      <tr>
+        <td>
+          <img src="" alt="">
+        </td>
+        <td>
+          <img src="" alt="">
+        </td>
+        <td>
+          <img src="" alt="">
+        </td>
+        <td>
+          <img src="" alt="">
+        </td>
+      </tr>
+    </table>
+    <p>
+      Tárhely:
+      <select id="storage">
+        <option value="250GB">250 GB</option>
+        <option value="500GB">500 GB</option>
+        <option value="1TB">1 TB</option>
+      </select>
+    </p>
+    <table>
+      <tr>
+        <td>
+          <img src="" alt="">
+        </td>
+        <td>
+          <img src="" alt="">
+        </td>
+        <td>
+          <img src="" alt="">
+        </td>
+      </tr>
+    </table>
+    <button onclick="calculatePrice()">Ár kiszámítása</button>
+    <button onclick="hiba()">Vásárlás</button>
+    <p id="price"></p>
+    <script>
+      function hiba(){
+        alert ("Hiba történt")
+        location.reload();
+      }
+      function calculatePrice() {
+        var cpu = document.getElementById("cpu").value;
+        var graphics = document.getElementById("graphics").value;
+        var memory = document.getElementById("memory").value;
+        var storage = document.getElementById("storage").value;
+        var totalPrice = 0;
+  
+        if (cpu == "i3") {
+          totalPrice += 30000;
+        } else if (cpu == "i5") {
+          totalPrice += 50000;
+        } else if (cpu == "i7") {
+          totalPrice += 70000;
+        } else if (cpu == "i7") {
+          totalPrice += 70000;
+        }else if (cpu == "i9") {
+          totalPrice += 100000;
+        }else if (cpu == "r3") {
+          totalPrice += 30000;
+        }else if (cpu == "r5") {
+          totalPrice += 50000;
+        }else if (cpu == "r7") {
+          totalPrice += 70000;
+        }else if (cpu == "r9") {
+          totalPrice += 100000;
+        }
+        
+  
+        if (graphics == "integrated") {
+          totalPrice += 0;
+        } else if (graphics == "3090") {
+          totalPrice += 700000;
+        } else if (graphics == "3080") {
+          totalPrice += 500000;
+        } else if (graphics == "3070") {
+          totalPrice += 250000;
+        } else if (graphics == "3060") {
+          totalPrice += 160000;
+        } else if (graphics == "1660ti") {
+          totalPrice += 100000;
+        } else if (graphics == "1660") {
+          totalPrice += 90000;
+        } else if (graphics == "1650") {
+          totalPrice += 400000;
+        } else if (graphics == "69") {
+          totalPrice += 350000;
+        } else if (graphics == "68") {
+          totalPrice += 190000;
+        } else if (graphics == "67") {
+          totalPrice += 120000;
+        } else if (graphics == "57") {
+          totalPrice += 300000;
+        } else if (graphics == "56") {
+          totalPrice += 100000;
+        }
+  
+        if (memory == "4GB") {
+          totalPrice += 10000;
+        } else if (memory == "8GB") {
+          totalPrice += 20000;
+        } else if (memory == "16GB") {
+          totalPrice += 30000;
+        } else if (memory == "32GB") {
+          totalPrice += 40000;
+        }
+  
+        if (storage == "250GB") {
+          totalPrice += 10000;
+        } else if (storage == "500GB") {
+          totalPrice += 15000;
+        } else if (storage == "1TB") {
+          totalPrice += 20000;
+        }
+  
+        document.getElementById("price").innerHTML = "Összeg:" + totalPrice + "Ft";
+      }
+    </script>
+  </body>
 </html>
