@@ -1,0 +1,1 @@
+stutdown /s 
