@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -14,46 +14,90 @@
 </head>
 
 <body>
-    <p>A <b>CPU</b> (angol: Central Processing Unit – központi feldolgozóegység) más néven processzor ill.
-        mikroprocesszor, a számítógép „agya”, azon egysége, amely az utasítások értelmezését és végrehajtását vezérli,
-        félvezetős kivitelezésű, összetett elektronikus áramkör. Magyarra többféleképpen fordítják, így pl. a központi
-        végrehajtó egység, központi feldolgozó egység, központi feldolgozó processzor, vagy egyszerűen processzor
-        kifejezések is elterjedtek. Míg a processzor fogalma már korábban ismert volt, a mikroprocesszor megjelenését
-        csak a félvezetős technológia és az integrált áramkörök kifejlesztése tette lehetővé, az 1970-es évek elején. A
-        processzor alatt általában mikroprocesszort értünk, régebben a processzor sok különálló áramkör volt, ám a
-        mikroprocesszorral sikerült a legfontosabb komponenseket egyetlen szilíciumlapkára integrálni.</p>
-
-    <p>A mikroprocesszor egy vagy több szilícium kristályra integrált, néhány ezertől[1] több milliárd számú
-        tranzisztort tartalmazó integrált áramkör, amelyben további részegységek különíthetők el, rendelkezik az adatok
-        ki- és beviteléhez szükséges sínrendszerrel, és rendelkezik egy utasításkészlettel, amelynek utasításait képes
-        végrehajtani. A bemeneti eszközök segítségével kódolt információkat feldolgozza, majd az eredményt a kimeneti
-        eszközök felé továbbítja, melyek ezeket az adatokat információvá alakítják vissza. A világ első
-        mikroprocesszorát (TMS 1000) az amerikai Texas Instruments fejlesztette ki 1971-ben, ezt követte az Intel
-        4004-es processzora, majd további cégek gyártmányai.</p>
-
-
-
-    <div class="row">
-        <div class="col-md-8">
-            <h1>A processzor főbb részei</h1>
-
-            <p>
-                Intel Pentium 100 MHz-es processzor
+    <h1 style="text-align: center;">CPU</h1>
+    <div class="row" style="text-align:justify; padding: 25px;">
+        <div class="col-md-12">
+            <p>A <b>CPU</b> (angol: Central Processing Unit – központi feldolgozóegység) más néven processzor ill.
+                mikroprocesszor, a számítógép „agya”, azon egysége, amely az utasítások értelmezését és végrehajtását
+                vezérli,
+                félvezetős kivitelezésű, összetett elektronikus áramkör. Magyarra többféleképpen fordítják, így pl. a
+                központi
+                végrehajtó egység, központi feldolgozó egység, központi feldolgozó processzor, vagy egyszerűen
+                processzor
+                kifejezések is elterjedtek. Míg a processzor fogalma már korábban ismert volt, a mikroprocesszor
+                megjelenését
+                csak a félvezetős technológia és az integrált áramkörök kifejlesztése tette lehetővé, az 1970-es évek
+                elején. A
+                processzor alatt általában mikroprocesszort értünk, régebben a processzor sok különálló áramkör volt, ám
+                a
+                mikroprocesszorral sikerült a legfontosabb komponenseket egyetlen szilíciumlapkára integrálni.</p>
+            </p>
+        </div>
+        <div class="row" style="text-align:justify; padding: 25px;">
+            <div class="col-md-9">
+                <h3 style="text-align: center;">Hogy mit is hajt végre?</h3>
                 <p>
-                    <b>ALU:</b> (Arithmetic and Logical Unit – Aritmetikai és Logikai Egység). A processzor alapvető alkotórésze,
-                    ami alapvető matematikai és logikai műveleteket hajt végre. Sebessége növelhető egy koprocesszor (FPU,
+                    A mikroprocesszor egy vagy több szilícium kristályra integrált, néhány ezertől több milliárd
+                    számú
+                    tranzisztort tartalmazó integrált áramkör, amelyben további részegységek különíthetők el,
+                    rendelkezik az adatok
+                    ki- és beviteléhez szükséges sínrendszerrel, és rendelkezik egy utasításkészlettel, amelynek
+                    utasításait képes
+                    végrehajtani. A bemeneti eszközök segítségével kódolt információkat feldolgozza, majd az eredményt a
+                    kimeneti
+                    eszközök felé továbbítja, melyek ezeket az adatokat információvá alakítják vissza. A világ első
+                    mikroprocesszorát (TMS 1000) az amerikai Texas Instruments fejlesztette ki 1971-ben, ezt követte az
+                    Intel
+                    4004-es processzora, majd további cégek gyártmányai.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="cpu_patya.png" alt="Alaplap" style="border-radius:40px;width: 100%;">
+            </div>
+        </div>
+        <div class="row" style="padding: 25px;">
+            <div class="col-md-4">
+
+
+                <h3 style="text-align: center;">ALU</h3>
+                <p>
+                    (Arithmetic and Logical Unit – Aritmetikai és Logikai Egység). A processzor alapvető
+                    alkotórésze,
+                    ami alapvető matematikai és logikai műveleteket hajt végre. Sebessége növelhető egy koprocesszor
+                    (FPU,
                     Floating Point Unit, lebegőpontos műveleteket végző egység) beépítésével. Az FPU korábban külön
                     részegység volt, manapság a processzorok mindegyike beépítve tartalmazza.
-                    AGU: (Address Generation Unit) - a címszámító egység, feladata a programutasításokban található címek
+                    AGU: (Address Generation Unit) - a címszámító egység, feladata a programutasításokban található
+                    címek
                     leképezése a főtár fizikai címeire és a tárolóvédelmi hibák felismerése.
                 </p>
+
+            </div>
+            <div class="col-md-4">
+                <h3 style="text-align: center;">CU</h3>
                 <p>
-                    <b>CU: </b>(Control Unit a.m. vezérlőegység vagy vezérlőáramkör). Ez szervezi, ütemezi a processzor egész
-                    munkáját. Például lehívja a memóriából a soron következő utasítást, értelmezi és végrehajtatja azt, majd
+                    (Control Unit a.m. vezérlőegység vagy vezérlőáramkör). Ez szervezi, ütemezi a processzor egész
+                    munkáját. Például lehívja a memóriából a soron következő utasítást, értelmezi és végrehajtatja azt,
+                    majd
                     meghatározza a következő utasítás címét.
                 </p>
+
+
+            </div>
+            <div class="col-md-4">
+                <img src="Cpu.png" alt="Alaplap" style="border-radius:40px;width: 100%;">
+            </div>
+        </div>
+
+
+
+        <div class="row" style="padding: 25px;">
+            <div class="col-md-6">
+
+
+                <h3 style="text-align: center;">Regiszter (Register)</h3>
                 <p>
-                    <b>Regiszter (Register)</b>: A regiszter a processzorba beépített nagyon gyors elérésű, kis méretű memória. A
+                    A regiszter a processzorba beépített nagyon gyors elérésű, kis méretű memória. A
                     regiszterek addig (ideiglenesen) tárolják az információkat, utasításokat, amíg a processzor dolgozik
                     velük. A mai gépekben 32/64 bit méretű regiszterek vannak. A processzor adatbuszai mindig akkorák,
                     amekkora a regiszterének a mérete, így egyszerre tudja az adatot betölteni ide. Például egy 32 bites
@@ -71,21 +115,27 @@
                     Buszvezérlő: A regisztert és más adattárolókat összekötő buszrendszert irányítja. A busz továbbítja az
                     adatokat.
                 </p>
+
+            </div>
+            <div class="col-md-4">
+                <h3 style="text-align: center;">Cache</h3>
                 <p>
-                    <b>Cache:</b>dern processzorok fontos része a cache (gyorsítótár). A cache a processzorba, vagy a
+                    dern processzorok fontos része a cache (gyorsítótár). A cache a processzorba, vagy a
                     processzor környezetébe integrált memória, ami a viszonylag lassú rendszermemória-elérést hivatott
                     kiváltani azoknak a programrészeknek és adatoknak előzetes beolvasásával, amikre a végrehajtásnak
                     közvetlenül szüksége lehet. A mai PC processzorok általában két gyorsítótárat használnak, egy kisebb (és
                     gyorsabb) első szintű (L1) és egy nagyobb másodszintű (L2) cache-t. A gyorsítótár mérete ma már
                     megabyte-os nagyságrendű.
                 </p>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <img  src="cpu_patya.png" alt="Cpu">
-        </div>
 
-    </div>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="Cpu3.png" alt="Alaplap" style="border-radius:40px;width: 100%;">
+            </div>
+
+
 </body>
 
 </html>
